@@ -1,9 +1,12 @@
 import React from "react";
+import { BiGlobe, BiSearch } from "react-icons/bi";
+import { GiHamburgerMenu } from "react-icons/gi";
 
+import { FaCircleUser } from "react-icons/fa6";
 const NavigationBar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 border-b md:ps-10 md:pe-10 mt-5 mb-4 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,7 +27,7 @@ const NavigationBar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
             >
               <li>
                 <a>Item 1</a>
@@ -45,33 +48,33 @@ const NavigationBar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="btn btn-ghost normal-case text-xl">
+            <img className="w-24" src="/Airbnb_Logo.svg.png" alt="" />
+          </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li tabIndex={0}>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
+        <div className="navbar-center hidden lg:flex mb-2">
+          <div className=" bg-white  text-sm font-semibold flex items-center border-2 p-3 gap-1 rounded-3xl hover:shadow-lg">
+            AnyWhere
+            <div className="divider lg:divider-horizontal"></div>
+            Any week
+            <div className="divider lg:divider-horizontal"></div>
+            <span className="text-gray-400">Add guests</span>
+            <BiSearch className="text-2xl text-white bg-red-500 p-1  rounded-full ms-2" />
+          </div>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end ">
+          <div className="flex items-center gap-3 cursor-pointer">
+            <a className=" bg-white m-0 text-sm font-semibold hover:bg-slate-200 p-3 rounded-3xl">
+              Airbnb your home{" "}
+            </a>
+            <a className=" bg-white m-0 text-xl font-semibold hover:bg-slate-200 p-3 rounded-3xl">
+              <BiGlobe />
+            </a>
+            <div className=" bg-white  text-xl font-semibold flex items-center border-2 p-3 gap-3 rounded-3xl hover:shadow-xl">
+              <GiHamburgerMenu className="text-lg" />
+              <FaCircleUser className="text-2xl text-gray-600" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

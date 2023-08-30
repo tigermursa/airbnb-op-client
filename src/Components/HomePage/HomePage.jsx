@@ -1,10 +1,11 @@
 import React from "react";
-import Categories from "../Categories/Categories";
+
+import PlaceCards from "../Categories/PlaceCards";
 
 const HomePage = () => {
   return (
     <div>
-      <Categories />
+      <PlaceCards />
     </div>
   );
 };

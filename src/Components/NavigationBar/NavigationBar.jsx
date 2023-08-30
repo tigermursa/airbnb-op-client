@@ -33,17 +33,6 @@ const NavigationBar = () => {
                 <a>Item 1</a>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
                 <a>Item 3</a>
               </li>
             </ul>
@@ -70,7 +59,7 @@ const NavigationBar = () => {
             <a className=" bg-white m-0 text-xl font-semibold hover:bg-slate-200 p-3 rounded-3xl">
               <BiGlobe />
             </a>
-            <div className=" bg-white  text-xl font-semibold flex items-center border-2 p-3 gap-3 rounded-3xl hover:shadow-xl">
+            <div className=" bg-white  text-xl font-semibold flex items-center border-2 p-3 gap-3 rounded-3xl hover:shadow-xl  mb-2">
               <GiHamburgerMenu className="text-lg" />
               <FaCircleUser className="text-2xl text-gray-600" />
             </div>

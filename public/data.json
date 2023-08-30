@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Muang Pattaya, Thailand",
+    "subtitle": "A Seaside Escape in September",
+    "availablemonth": "September",
+    "available-date": [1, 2, 3, 4, 5, 6],
+    "price": 89,
+    "category": "beach",
+    "image": "https://www.tripsavvy.com/thmb/3u7i_RGcvKU9UzfRD7-FHzBrdkI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-833477912-5c51de1046e0fb0001a8eb82.jpg"
+  },
+  {
+    "title": "Greenside Golf Resort",
+    "subtitle": "Tee Off in August",
+    "availablemonth": "August",
+    "available-date": [2, 5, 9, 14, 21],
+    "price": 200,
+    "category": "golf",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRm8LqsWYu0z-wiCw6fVGIiiRMqMil0I_lXw&usqp=CAU"
+  },
+  {
+    "title": "Crystal Caves Exploration",
+    "subtitle": "Delve into the Depths in October",
+    "availablemonth": "October",
+    "available-date": [3, 7, 10, 18, 27],
+    "price": 65,
+    "category": "cave",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXDIk80SICJzQ17gKPGdoj2lF-GKitLxjeg&usqp=CAU"
+  },
+  {
+    "title": "Tranquil Poolside Retreat",
+    "subtitle": "Serene Summer Relaxation in June",
+    "availablemonth": "June",
+    "available-date": [5, 13, 17, 23, 29],
+    "price": 150,
+    "category": "pool",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThZ9jdkh5YRh6r5ex3itBDNcKQL7BZIDEeHw&usqp=CAU"
+  },
+  {
+    "title": "Tropical Island Getaway",
+    "subtitle": "Paradise Found in September",
+    "availablemonth": "September",
+    "available-date": [4, 9, 14, 22, 28],
+    "price": 180,
+    "category": "island",
+    "image": "https://media.istockphoto.com/id/1360554439/photo/maldives-tropical-island.webp?b=1&s=170667a&w=0&k=20&c=AWY54kmUT9IcXJZdSdxxm5JUFK_3fxpmMbWQ6IhEG50="
+  },
+  {
+    "title": "Adventure Camp Expedition",
+    "subtitle": "Thrilling Wilderness Journey in May",
+    "availablemonth": "May",
+    "available-date": [7, 11, 16, 25, 30],
+    "price": 80,
+    "category": "camp",
+    "image": "https://blogstudio.s3.theshoppad.net/grayl/3aeccfba3b17ef4bb0049367b78561d3.jpg"
+  }
+]

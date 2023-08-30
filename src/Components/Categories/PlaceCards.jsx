@@ -29,32 +29,32 @@ const PlaceCards = () => {
     <div>
       <div className="flex gap-10 justify-center pb-3">
         <div className={`flex flex-col items-center hover:border-b-2 cursor-pointer ${selectedCategory === "all" ? 'border-b-2' : ''}`} onClick={() => setSelectedCategory("all")}>
-          <FaHeart className="text-2xl text-gray-600" />
-          <span className="text-sm font-semibold text-gray-500 mt-2">All</span>
+          <FaHeart className={`text-2xl ${selectedCategory === "all" ? 'text-black' : 'text-gray-600'}`} />
+          <span className={`text-sm font-semibold ${selectedCategory === "all" ? 'text-black' : 'text-gray-500'} mt-2`}>All</span>
         </div>
         <div className={`flex flex-col items-center hover:border-b-2 cursor-pointer ${selectedCategory === "beach" ? 'border-b-2' : ''}`} onClick={() => setSelectedCategory("beach")}>
-          <FaUmbrellaBeach className="text-2xl text-gray-600" />
-          <span className="text-sm font-semibold text-gray-500 mt-2">Beach</span>
+          <FaUmbrellaBeach className={`text-2xl ${selectedCategory === "beach" ? 'text-black' : 'text-gray-600'}`} />
+          <span className={`text-sm font-semibold ${selectedCategory === "beach" ? 'text-black' : 'text-gray-500'} mt-2`}>Beach</span>
         </div>
         <div className={`flex flex-col items-center hover:border-b-2 cursor-pointer ${selectedCategory === "golf" ? 'border-b-2' : ''}`} onClick={() => setSelectedCategory("golf")}>
-          <FaGolfBall className="text-2xl text-gray-600" />
-          <span className="text-sm font-semibold text-gray-500 mt-2">Golfing</span>
+          <FaGolfBall className={`text-2xl ${selectedCategory === "golf" ? 'text-black' : 'text-gray-600'}`} />
+          <span className={`text-sm font-semibold ${selectedCategory === "golf" ? 'text-black' : 'text-gray-500'} mt-2`}>Golfing</span>
         </div>
         <div className={`flex flex-col items-center hover:border-b-2 cursor-pointer ${selectedCategory === "cave" ? 'border-b-2' : ''}`} onClick={() => setSelectedCategory("cave")}>
-          <GiMountainCave className="text-2xl text-gray-600" />
-          <span className="text-sm font-semibold text-gray-500 mt-2">Cave</span>
+          <GiMountainCave className={`text-2xl ${selectedCategory === "cave" ? 'text-black' : 'text-gray-600'}`} />
+          <span className={`text-sm font-semibold ${selectedCategory === "cave" ? 'text-black' : 'text-gray-500'} mt-2`}>Cave</span>
         </div>
         <div className={`flex flex-col items-center hover:border-b-2 cursor-pointer ${selectedCategory === "pool" ? 'border-b-2' : ''}`} onClick={() => setSelectedCategory("pool")}>
-          <FaSwimmingPool className="text-2xl text-gray-600" />
-          <span className="text-sm font-semibold text-gray-500 mt-2">Amazing Pools</span>
+          <FaSwimmingPool className={`text-2xl ${selectedCategory === "pool" ? 'text-black' : 'text-gray-600'}`} />
+          <span className={`text-sm font-semibold ${selectedCategory === "pool" ? 'text-black' : 'text-gray-500'} mt-2`}>Amazing Pools</span>
         </div>
         <div className={`flex flex-col items-center hover:border-b-2 cursor-pointer ${selectedCategory === "island" ? 'border-b-2' : ''}`} onClick={() => setSelectedCategory("island")}>
-          <GiIsland className="text-2xl text-gray-600" />
-          <span className="text-sm font-semibold text-gray-500 mt-2">Island</span>
+          <GiIsland className={`text-2xl ${selectedCategory === "island" ? 'text-black' : 'text-gray-600'}`} />
+          <span className={`text-sm font-semibold ${selectedCategory === "island" ? 'text-black' : 'text-gray-500'} mt-2`}>Island</span>
         </div>
         <div className={`flex flex-col items-center hover:border-b-2 cursor-pointer ${selectedCategory === "camp" ? 'border-b-2' : ''}`} onClick={() => setSelectedCategory("camp")}>
-          <GiCampingTent className="text-2xl text-gray-600" />
-          <span className="text-sm font-semibold text-gray-500 mt-2">Camping</span>
+          <GiCampingTent className={`text-2xl ${selectedCategory === "camp" ? 'text-black' : 'text-gray-600'}`} />
+          <span className={`text-sm font-semibold ${selectedCategory === "camp" ? 'text-black' : 'text-gray-500'} mt-2`}>Camping</span>
         </div>
       </div>
 

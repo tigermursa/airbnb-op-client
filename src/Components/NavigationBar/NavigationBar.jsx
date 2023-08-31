@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiGlobe, BiSearch } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 import { FaCircleUser } from "react-icons/fa6";
-const NavigationBar = () => {
+import SearchBox from "./SearchBox";
+const NavigationBar = ({ setSearchQuery }) => {
+  const [isSearchBoxOpen, setIsSearchBoxOpen] = useState(false);
+
+  const toggleSearchBox = () => {
+    setIsSearchBoxOpen(!isSearchBoxOpen);
+  };
+
   return (
-    <div>
-      <div className="navbar bg-base-100 border-b md:ps-10 md:pe-10 mt-5 mb-4 ">
+    <div className="border-b">
+      <div className="navbar bg-base-100  md:ps-10 md:pe-10 mt-5 mb-4 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -41,22 +47,27 @@ const NavigationBar = () => {
             <img className="w-24" src="/Airbnb_Logo.svg.png" alt="" />
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex mb-2">
-          <div className=" bg-white  text-sm font-semibold flex items-center border-2 p-3 gap-1 rounded-3xl hover:shadow-lg">
-            AnyWhere
-            <div className="divider lg:divider-horizontal"></div>
-            Any week
-            <div className="divider lg:divider-horizontal"></div>
-            <span className="text-gray-400">Add guests</span>
-            <BiSearch className="text-2xl text-white bg-red-500 p-1  rounded-full ms-2" />
+        {!isSearchBoxOpen && (
+          <div
+            className="navbar-center hidden lg:flex mb-2"
+            onClick={toggleSearchBox}
+          >
+            <div className=" bg-white  text-sm font-semibold flex items-center border-2 p-3 gap-1 rounded-3xl hover:shadow-lg">
+              AnyWhere
+              <div className="divider lg:divider-horizontal"></div>
+              Any week
+              <div className="divider lg:divider-horizontal"></div>
+              <span className="text-gray-400">Add guests</span>
+              <BiSearch className="text-2xl text-white bg-red-500 p-1  rounded-full ms-2" />
+            </div>
           </div>
-        </div>
+        )}
         <div className="navbar-end ">
           <div className="flex items-center gap-3 cursor-pointer">
-            <a className=" bg-white m-0 text-sm font-semibold hover:bg-slate-200 p-3 rounded-3xl">
+            <a className=" bg-white m-0 text-sm font-semibold hover:bg-slate-200 p-3 rounded-3xl hidden md:block">
               Airbnb your home{" "}
             </a>
-            <a className=" bg-white m-0 text-xl font-semibold hover:bg-slate-200 p-3 rounded-3xl">
+            <a className=" bg-white m-0 text-xl font-semibold hover:bg-slate-200 p-3 rounded-3xl hidden md:block">
               <BiGlobe />
             </a>
             <div className=" bg-white  text-xl font-semibold flex items-center border-2 p-3 gap-3 rounded-3xl hover:shadow-xl  mb-2">
@@ -65,6 +76,13 @@ const NavigationBar = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <SearchBox
+          setSearchQuery={setSearchQuery}
+          isOpen={isSearchBoxOpen}
+          toggleSearchBox={toggleSearchBox}
+        />
       </div>
     </div>
   );
